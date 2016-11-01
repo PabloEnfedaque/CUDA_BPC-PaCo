@@ -5,6 +5,8 @@ The "main_example.cu" contains a sample code that takes an image and a set of LU
 "BPC-PaCo.cu" contains the CUDA code of this research with all the encoding and decoding functions. 
 This current version is a proof of concept that takes images of size i\*2 x i\*2 with i > 1024. The implementation may not properly work for other image sizes.
 
+The sample image used is subdivided in codeblocks and has to be unzipped before running the example.
+
 The sample main can be compiled, executed and profiled using the nvcc compiler as follows:
 
 	$nvcc -c -O3 -arch=sm_52 -use_fast_math -Xptxas -v -maxrregcount=32 -DCPASS_3=0 source/*.cu
